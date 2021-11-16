@@ -1,0 +1,25 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('/js/MyJs');
+    </isscript>
+    <form>
+        <label> Search Here </label>
+        <input id="SearchArea" type="text"/>
+        <button type="button" id="SearchButton">Search</button> 
+    </form>
+    <table id="Table">
+        <tr>
+            <td> Title </td>
+            <td id="title"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</isdecorate>

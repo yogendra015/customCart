@@ -1,0 +1,97 @@
+body{
+    width: available;
+    height: available;
+}
+
+.container{
+    width: available;
+    height: available;
+}
+
+.leftpane{
+    width: 50%;
+    min-width: 350px;
+    height: available;
+    min-height: 400px;
+    float: left;
+    background-color: rosybrown;
+    border-collapse: collapse;
+}
+
+#rightpane{
+    width: available;
+    height: available;
+    position: relative;
+    margin-left: 50%;
+    background-color: rgb(255, 157, 0);
+    border-collapse: collapse;
+}
+
+.toppane{
+    width: available;
+    height: 50px;
+    border-collapse: collapse;
+    background-color: #4da6ff;
+}
+
+.imgDiv{
+    height:200px;
+}
+.imgZoom {
+    transition:1.0s;
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+    filter: grayscale(100%);
+  }
+  
+  .imgZoom:hover, .imgZoom:focus {    
+    transition: 5.0s;
+    transform: rotate(360deg);
+    width:200px;
+    height: 200px;
+    filter: grayscale(0%);
+  }
+  .tableRow{
+      height : 200px;
+  }
+  .imageData{
+      height : 200px;
+      width : 200px;
+  }
+  #ImageId {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#tableData{
+    text-align: center;
+}
+#rightpane:hover .detailText{
+    transform: scale(1.1);
+    display:block;
+    z-index:999;
+    cursor: pointer;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 5s;
+    -webkit-transition-timing-function: ease;
+    transition: all 5s ease-in-out;
+    color: yellow;
+    background-color: black;
+}
+.Dimg{
+    transition:1.0s;
+    width: 150px;
+    height: 150px;
+    padding: 50px;
+    position:'absolute';
+    filter: grayscale(100%);
+}
+  #rightpane:hover .Dimg{
+    transition:5.0s;
+    width: 200px;
+    height: 200px;
+    padding: 0px;
+    position:'absolute';
+    filter: grayscale(0%);
+  }

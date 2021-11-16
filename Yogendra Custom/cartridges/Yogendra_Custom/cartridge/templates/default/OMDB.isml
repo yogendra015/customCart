@@ -1,0 +1,22 @@
+<isdecorate template="common/layout/page">
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addJs('/js/OMDB_API.js');
+    assets.addCss('/css/OMDB.css');
+</isscript>
+<div class="toppane">
+    <form>
+        <label> Search Here</label>
+        <input type="text" id="SearchText" placeholder="Movie Name" />
+        <button type="button" id="SearchButton"> Search </button>
+    </form>
+</div>
+    <div id="tablearea" class="leftpane">
+        <table id="table">
+        </table>
+    </div>
+    <div id="rightpane">
+        <div id="MyDiv">
+        </div>
+    </div>
+</isdecorate>
